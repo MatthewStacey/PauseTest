@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C933B578148C2C5F00629CB9 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C933B577148C2C5F00629CB9 /* background@2x.png */; };
+		C933B57B148C2C6900629CB9 /* backgroundPauseBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C933B57A148C2C6900629CB9 /* backgroundPauseBox@2x.png */; };
+		C933B57F148C2C9700629CB9 /* buttonLevelRetry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C933B57E148C2C9700629CB9 /* buttonLevelRetry@2x.png */; };
+		C933B581148C2CA800629CB9 /* buttonPauseback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C933B580148C2CA800629CB9 /* buttonPauseback@2x.png */; };
+		C933B583148C2D4100629CB9 /* buttonMainMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C933B582148C2D4000629CB9 /* buttonMainMenu@2x.png */; };
+		C933B585148C323C00629CB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C933B584148C323C00629CB9 /* QuartzCore.framework */; };
+		C9948BB01489B55900015BEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9948BAF1489B55900015BEC /* UIKit.framework */; };
+		C9948BB21489B55900015BEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9948BB11489B55900015BEC /* Foundation.framework */; };
+		C9948BB41489B55900015BEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9948BB31489B55900015BEC /* CoreGraphics.framework */; };
+		C9948BBA1489B55900015BEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9948BB81489B55900015BEC /* InfoPlist.strings */; };
+		C9948BBD1489B55900015BEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9948BBC1489B55900015BEC /* main.m */; };
+		C9948BC01489B55900015BEC /* PauseTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9948BBF1489B55900015BEC /* PauseTestAppDelegate.m */; };
+		C9948BC31489B55900015BEC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9948BC11489B55900015BEC /* MainWindow.xib */; };
+		C9948BC61489B55900015BEC /* PauseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9948BC51489B55900015BEC /* PauseTestViewController.m */; };
+		C9948BC91489B55900015BEC /* PauseTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9948BC71489B55900015BEC /* PauseTestViewController.xib */; };
+		C9948BE21489B96C00015BEC /* GAME.m in Sources */ = {isa = PBXBuildFile; fileRef = C9948BE01489B96C00015BEC /* GAME.m */; };
+		C9948BE31489B96C00015BEC /* GAME.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9948BE11489B96C00015BEC /* GAME.xib */; };
+		C9948BEE1489B9D300015BEC /* PauseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9948BED1489B9D300015BEC /* PauseView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C933B577148C2C5F00629CB9 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		C933B57A148C2C6900629CB9 /* backgroundPauseBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundPauseBox@2x.png"; sourceTree = "<group>"; };
+		C933B57E148C2C9700629CB9 /* buttonLevelRetry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonLevelRetry@2x.png"; sourceTree = "<group>"; };
+		C933B580148C2CA800629CB9 /* buttonPauseback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonPauseback@2x.png"; sourceTree = "<group>"; };
+		C933B582148C2D4000629CB9 /* buttonMainMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonMainMenu@2x.png"; sourceTree = "<group>"; };
+		C933B584148C323C00629CB9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C9948BAB1489B55900015BEC /* PauseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PauseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9948BAF1489B55900015BEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9948BB11489B55900015BEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9948BB31489B55900015BEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9948BB71489B55900015BEC /* PauseTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PauseTest-Info.plist"; sourceTree = "<group>"; };
+		C9948BB91489B55900015BEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9948BBB1489B55900015BEC /* PauseTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PauseTest-Prefix.pch"; sourceTree = "<group>"; };
+		C9948BBC1489B55900015BEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9948BBE1489B55900015BEC /* PauseTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PauseTestAppDelegate.h; sourceTree = "<group>"; };
+		C9948BBF1489B55900015BEC /* PauseTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PauseTestAppDelegate.m; sourceTree = "<group>"; };
+		C9948BC21489B55900015BEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C9948BC41489B55900015BEC /* PauseTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PauseTestViewController.h; sourceTree = "<group>"; };
+		C9948BC51489B55900015BEC /* PauseTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PauseTestViewController.m; sourceTree = "<group>"; };
+		C9948BC81489B55900015BEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PauseTestViewController.xib; sourceTree = "<group>"; };
+		C9948BDF1489B96C00015BEC /* GAME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAME.h; sourceTree = "<group>"; };
+		C9948BE01489B96C00015BEC /* GAME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAME.m; sourceTree = "<group>"; };
+		C9948BE11489B96C00015BEC /* GAME.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GAME.xib; sourceTree = "<group>"; };
+		C9948BEC1489B9D300015BEC /* PauseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseView.h; sourceTree = "<group>"; };
+		C9948BED1489B9D300015BEC /* PauseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9948BA81489B55900015BEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C933B585148C323C00629CB9 /* QuartzCore.framework in Frameworks */,
+				C9948BB01489B55900015BEC /* UIKit.framework in Frameworks */,
+				C9948BB21489B55900015BEC /* Foundation.framework in Frameworks */,
+				C9948BB41489B55900015BEC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9948BA01489B55900015BEC = {
+			isa = PBXGroup;
+			children = (
+				C9948BB51489B55900015BEC /* PauseTest */,
+				C9948BAE1489B55900015BEC /* Frameworks */,
+				C9948BAC1489B55900015BEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9948BAC1489B55900015BEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9948BAB1489B55900015BEC /* PauseTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9948BAE1489B55900015BEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C933B584148C323C00629CB9 /* QuartzCore.framework */,
+				C9948BAF1489B55900015BEC /* UIKit.framework */,
+				C9948BB11489B55900015BEC /* Foundation.framework */,
+				C9948BB31489B55900015BEC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9948BB51489B55900015BEC /* PauseTest */ = {
+			isa = PBXGroup;
+			children = (
+				C933B582148C2D4000629CB9 /* buttonMainMenu@2x.png */,
+				C933B580148C2CA800629CB9 /* buttonPauseback@2x.png */,
+				C933B57E148C2C9700629CB9 /* buttonLevelRetry@2x.png */,
+				C933B57A148C2C6900629CB9 /* backgroundPauseBox@2x.png */,
+				C933B577148C2C5F00629CB9 /* background@2x.png */,
+				C9948BBE1489B55900015BEC /* PauseTestAppDelegate.h */,
+				C9948BBF1489B55900015BEC /* PauseTestAppDelegate.m */,
+				C9948BC11489B55900015BEC /* MainWindow.xib */,
+				C9948BC41489B55900015BEC /* PauseTestViewController.h */,
+				C9948BC51489B55900015BEC /* PauseTestViewController.m */,
+				C9948BC71489B55900015BEC /* PauseTestViewController.xib */,
+				C9948BB61489B55900015BEC /* Supporting Files */,
+				C9948BDF1489B96C00015BEC /* GAME.h */,
+				C9948BE01489B96C00015BEC /* GAME.m */,
+				C9948BE11489B96C00015BEC /* GAME.xib */,
+				C9948BEC1489B9D300015BEC /* PauseView.h */,
+				C9948BED1489B9D300015BEC /* PauseView.m */,
+			);
+			path = PauseTest;
+			sourceTree = "<group>";
+		};
+		C9948BB61489B55900015BEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9948BB71489B55900015BEC /* PauseTest-Info.plist */,
+				C9948BB81489B55900015BEC /* InfoPlist.strings */,
+				C9948BBB1489B55900015BEC /* PauseTest-Prefix.pch */,
+				C9948BBC1489B55900015BEC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9948BAA1489B55900015BEC /* PauseTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9948BCC1489B55900015BEC /* Build configuration list for PBXNativeTarget "PauseTest" */;
+			buildPhases = (
+				C9948BA71489B55900015BEC /* Sources */,
+				C9948BA81489B55900015BEC /* Frameworks */,
+				C9948BA91489B55900015BEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PauseTest;
+			productName = PauseTest;
+			productReference = C9948BAB1489B55900015BEC /* PauseTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9948BA21489B55900015BEC /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C9948BA51489B55900015BEC /* Build configuration list for PBXProject "PauseTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9948BA01489B55900015BEC;
+			productRefGroup = C9948BAC1489B55900015BEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9948BAA1489B55900015BEC /* PauseTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9948BA91489B55900015BEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9948BBA1489B55900015BEC /* InfoPlist.strings in Resources */,
+				C9948BC31489B55900015BEC /* MainWindow.xib in Resources */,
+				C9948BC91489B55900015BEC /* PauseTestViewController.xib in Resources */,
+				C9948BE31489B96C00015BEC /* GAME.xib in Resources */,
+				C933B578148C2C5F00629CB9 /* background@2x.png in Resources */,
+				C933B57B148C2C6900629CB9 /* backgroundPauseBox@2x.png in Resources */,
+				C933B57F148C2C9700629CB9 /* buttonLevelRetry@2x.png in Resources */,
+				C933B581148C2CA800629CB9 /* buttonPauseback@2x.png in Resources */,
+				C933B583148C2D4100629CB9 /* buttonMainMenu@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9948BA71489B55900015BEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9948BBD1489B55900015BEC /* main.m in Sources */,
+				C9948BC01489B55900015BEC /* PauseTestAppDelegate.m in Sources */,
+				C9948BC61489B55900015BEC /* PauseTestViewController.m in Sources */,
+				C9948BE21489B96C00015BEC /* GAME.m in Sources */,
+				C9948BEE1489B9D300015BEC /* PauseView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9948BB81489B55900015BEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9948BB91489B55900015BEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9948BC11489B55900015BEC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9948BC21489B55900015BEC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C9948BC71489B55900015BEC /* PauseTestViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9948BC81489B55900015BEC /* en */,
+			);
+			name = PauseTestViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9948BCA1489B55900015BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9948BCB1489B55900015BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C9948BCD1489B55900015BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PauseTest/PauseTest-Prefix.pch";
+				INFOPLIST_FILE = "PauseTest/PauseTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9948BCE1489B55900015BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PauseTest/PauseTest-Prefix.pch";
+				INFOPLIST_FILE = "PauseTest/PauseTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9948BA51489B55900015BEC /* Build configuration list for PBXProject "PauseTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9948BCA1489B55900015BEC /* Debug */,
+				C9948BCB1489B55900015BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9948BCC1489B55900015BEC /* Build configuration list for PBXNativeTarget "PauseTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9948BCD1489B55900015BEC /* Debug */,
+				C9948BCE1489B55900015BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9948BA21489B55900015BEC /* Project object */;
+}
