@@ -12,6 +12,9 @@
 @interface GAME : UIViewController<PauseMenuAction> {
     
 }
+
+   @property (retain) PauseView *pv;
+
 - (void) pauseMenuResult:(int)action;
 - (IBAction) pausePressed;
 - (void) mainMenuPressed;

@@ -14,19 +14,25 @@
 @end
 
 @interface PauseView : UIView {
-    UIImageView *ivBlack;
-    UIImageView *ivBackground;
-    UILabel *ModeTitle;
-    UILabel *detailsLabel;
-    UILabel *titleLabel;
-    
-    id <PauseMenuAction> delegate;
+
+
 }
-- (id)initWithFrame:(CGRect)frame :(int) totalQuestions: (int) questionNumber;
+
+   @property (retain) UIImageView *ivBlack;
+   @property (retain) UIImageView *ivBackground;
+   @property (retain) UILabel *ModeTitle;
+   @property (retain) UILabel *detailsLabel;
+   @property (retain) UILabel *titleLabel;
+
+   @property (assign) id <PauseMenuAction> delegate;
+
+
+-(id)initWithFrame:(CGRect)frame totalQuestions:(int) totalQuestions questionNumber: (int) questionNumber;
+//- (id)initWithFrame:(CGRect)frame :(int) totalQuestions: (int) questionNumber;
 -(void)showPauseView;
 -(void)hidePauseView;
 -(void)mainMenuButtonPressed;
 -(void)continueButtonPressed;
-@property (assign) id delegate;
+//@property (assign) id delegate;
 
 @end

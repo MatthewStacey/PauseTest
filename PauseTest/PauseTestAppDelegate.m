@@ -16,7 +16,7 @@
 
 @synthesize window=_window;
 @synthesize pauseViewController=_viewController;
-@synthesize gameViewController;
+@synthesize gameViewController=_gameViewController;
 
 -(void) displayGame
 {
@@ -41,7 +41,7 @@
     
     
     [self.pauseViewController.view removeFromSuperview];
-    [self.window addSubview:[gameViewController view]];
+    [self.window addSubview:self.gameViewController.view];
     
 }
 
@@ -61,14 +61,16 @@
     // Next add it to the containerView's layer. This will perform the transition based on how we change its contents.
     [self.window.layer addAnimation:transition forKey:nil];
     
-    [gameViewController.view removeFromSuperview];
+    [self.gameViewController.view removeFromSuperview];
 
     
     [self.window addSubview:[self.pauseViewController view]];
     [UIView commitAnimations];
-    
-    [gameViewController release];
-    gameViewController = nil;
+    if(self.gameViewController)
+    {
+        [self.gameViewController release];
+      //  self.gameViewController = nil;
+    }
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -84,7 +86,7 @@
 {
     [_window release];
     [_viewController release];
-    [gameViewController release];
+    [_gameViewController release];
     [super dealloc];
 }
 

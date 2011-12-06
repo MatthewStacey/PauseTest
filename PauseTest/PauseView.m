@@ -10,50 +10,58 @@
 
 @implementation PauseView
 
-@synthesize delegate;
+@synthesize ivBlack=_ivBlack;
+@synthesize ivBackground=iv_Background;
+@synthesize ModeTitle=_ModeTitle;
+@synthesize detailsLabel=_detailsLabel;
+@synthesize titleLabel=_titleLabel;
+@synthesize  delegate=_delegate;
 
-- (id)initWithFrame:(CGRect)frame :(int) totalQuestions: (int) questionNumber
+
+//@synthesize delegate;
+
+-(id)initWithFrame:(CGRect)frame totalQuestions:(int) totalQuestions questionNumber: (int) questionNumber
 {
     self = [super initWithFrame:frame];
     if (self) {
 
-        ivBlack = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backgroundPauseBox.png"]];
-        ivBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
+        self.ivBlack = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backgroundPauseBox.png"]];
+        self.ivBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
         
-        [self addSubview:ivBackground];
-        [self addSubview:ivBlack];
+        [self addSubview:self.ivBackground];
+        [self addSubview:self.ivBlack];
         
         
-        ModeTitle = [[UILabel alloc] initWithFrame:CGRectMake(30, 30, 260, 30)];
-        ModeTitle.text = [NSString stringWithFormat:@"%@ Level", @"First"];
-        ModeTitle.font = [UIFont fontWithName:@"Michroma" size:20];
-        ModeTitle.textAlignment = UITextAlignmentCenter;
-        ModeTitle.textColor = [UIColor whiteColor];
-        ModeTitle.backgroundColor = [UIColor clearColor];
-        [self addSubview:ModeTitle];
+        self.ModeTitle = [[UILabel alloc] initWithFrame:CGRectMake(30, 30, 260, 30)];
+        self.ModeTitle.text = [NSString stringWithFormat:@"%@ Level", @"First"];
+        self.ModeTitle.font = [UIFont fontWithName:@"Michroma" size:20];
+        self.ModeTitle.textAlignment = UITextAlignmentCenter;
+        self.ModeTitle.textColor = [UIColor whiteColor];
+        self.ModeTitle.backgroundColor = [UIColor clearColor];
+        [self addSubview:self.ModeTitle];
         
-        detailsLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 80, 260, 30)];
-        detailsLabel.font = [UIFont fontWithName:@"Michroma" size:14];
-        detailsLabel.numberOfLines = 0; // this means infinite
+        self.detailsLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 80, 260, 30)];
+        self.detailsLabel.font = [UIFont fontWithName:@"Michroma" size:14];
+        self.detailsLabel.numberOfLines = 0; // this means infinite
         int questionsLeft = ((totalQuestions - questionNumber) + 1);
         if (questionsLeft == 0) {
-            detailsLabel.text = [NSString stringWithFormat:@"Keep going, this is the last question for the round!",questionsLeft];
+            self.detailsLabel.text = [NSString stringWithFormat:@"Keep going, this is the last question for the round!",questionsLeft];
         }
         else   
         {
             if (questionsLeft == 1) {
-                detailsLabel.text = [NSString stringWithFormat:@"Keep going, just one more question for the round!",questionsLeft];
+                self.detailsLabel.text = [NSString stringWithFormat:@"Keep going, just one more question for the round!",questionsLeft];
             }
             else
             {
-                detailsLabel.text = [NSString stringWithFormat:@"Keep going, after this one there are %d questions left for the round!",questionsLeft];
+                self.detailsLabel.text = [NSString stringWithFormat:@"Keep going, after this one there are %d questions left for the round!",questionsLeft];
             }
         }
-        detailsLabel.textAlignment = UITextAlignmentCenter;
-        detailsLabel.textColor = [UIColor whiteColor];
-        detailsLabel.backgroundColor = [UIColor clearColor];
-        [detailsLabel sizeToFit];
-        [self addSubview:detailsLabel];
+        self.detailsLabel.textAlignment = UITextAlignmentCenter;
+        self.detailsLabel.textColor = [UIColor whiteColor];
+        self.detailsLabel.backgroundColor = [UIColor clearColor];
+        [self.detailsLabel sizeToFit];
+        [self addSubview:self.detailsLabel];
         
         UIButton *levelSelectButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [levelSelectButton addTarget:self 
@@ -73,13 +81,13 @@
         [button setBackgroundImage:resume forState:UIControlStateNormal];
         [self addSubview:button];
         
-        titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 300, 260, 30)];
-        titleLabel.font = [UIFont fontWithName:@"Michroma" size:24];
-        titleLabel.text = @"GAME PAUSED";
-        titleLabel.textAlignment = UITextAlignmentCenter;
-        titleLabel.textColor = [UIColor whiteColor];
-        titleLabel.backgroundColor = [UIColor clearColor];
-        [self addSubview:titleLabel];
+        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 300, 260, 30)];
+        self.titleLabel.font = [UIFont fontWithName:@"Michroma" size:24];
+        self.titleLabel.text = @"GAME PAUSED";
+        self.titleLabel.textAlignment = UITextAlignmentCenter;
+        self.titleLabel.textColor = [UIColor whiteColor];
+        self.titleLabel.backgroundColor = [UIColor clearColor];
+        [self addSubview:self.titleLabel];
 
     }
     return self;
@@ -114,7 +122,7 @@
 - (void)animationDidStop:(NSString*)animationID finished:(BOOL)finished context:(void *)context 
 {
 	[self removeFromSuperview];
-	[self release];
+	//[self release];
 }
 
 -(void)continueButtonPressed
@@ -130,15 +138,13 @@
 
 - (void)dealloc
 {
-    [ivBlack removeFromSuperview];
-    [ivBackground removeFromSuperview];
-    [ivBlack release], ivBlack=Nil;
-    [ivBackground release], ivBackground=Nil;
-    [ModeTitle release], ModeTitle=Nil;
-    [detailsLabel release], detailsLabel=Nil;
-    [titleLabel release], titleLabel=Nil;
-    if ([self superview])
-        [self removeFromSuperview];
+    [self.ivBlack removeFromSuperview];
+    [self.ivBackground removeFromSuperview];
+    [self.ivBlack release], self.ivBlack=Nil;
+    [self.ivBackground release], self.ivBackground=Nil;
+    [self.ModeTitle release], self.ModeTitle=Nil;
+    [self.detailsLabel release], self.detailsLabel=Nil;
+    [self.titleLabel release], self.titleLabel=Nil;
     [super dealloc];
 }
 

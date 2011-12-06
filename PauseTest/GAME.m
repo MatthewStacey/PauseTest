@@ -12,6 +12,8 @@
 
 @implementation GAME
 
+@synthesize pv=_pv;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -45,19 +47,20 @@
 
 - (IBAction) pausePressed
 {
-    PauseView *pv = [[PauseView alloc] initWithFrame:CGRectMake(0, -500, 320, 480) :10 :3]; 
-    
-    [pv setDelegate:self];
-    
-    [self.view addSubview:pv];
-    
-    [pv showPauseView];
-    [pv release];
+CGRect startFrame = CGRectMake(0, -500, 320, 480);
+   if (!self.pv) {
+       self.pv = [[PauseView alloc] initWithFrame: startFrame totalQuestions:10 questionNumber:3];
+       [self.pv setDelegate: self];
+       [self.view addSubview:self.pv];
+   }
+   self.pv.frame = startFrame;
+   [self.pv showPauseView];
 }
 
 - (void)dealloc
 {
     [super dealloc];
+    [self.pv release], self.pv = Nil;
 }
 
 - (void)didReceiveMemoryWarning
